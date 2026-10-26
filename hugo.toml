@@ -1,5 +1,5 @@
 baseURL = "https://zhouyacheng.github.io/autoblog/"
-languageCode = "zh-cn"
+locale = "zh-cn"
 defaultContentLanguage = "zh-cn"
 title = "Autoblog"
 theme = "PaperMod"
