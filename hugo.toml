@@ -1,0 +1,68 @@
+baseURL = "https://zhouyacheng.github.io/autoblog/"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+title = "Autoblog"
+theme = "PaperMod"
+enableRobotsTXT = true
+hasCJKLanguage = true
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  author = "zyc"
+  description = "记录工程实践与思考。"
+  keywords = ["blog", "hugo", "engineering"]
+  DateFormat = "2006-01-02"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  ShowWordCount = true
+  mainSections = ["posts"]
+
+  [params.homeInfoParams]
+    Title = "Autoblog"
+    Content = "记录工程实践与思考。内容通过 PR 合并到 main 后自动部署。"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/zhouyacheng"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = 30
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 40
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    lineNos = false
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
